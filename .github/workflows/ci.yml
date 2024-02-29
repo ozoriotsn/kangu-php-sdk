@@ -44,13 +44,13 @@ jobs:
             bootstrap: vendor/autoload.php
             configuration: phpunit.xml
             php_extensions: xdebug
-            args: tests --coverage-clover coverage.xml
+            args: tests --coverage-clover ./coverage.xml
    
         - name: Upload coverage reports to Codecov
           uses: codecov/codecov-action@v3
           with:
             token: ${{ secrets.CODECOV_TOKEN }}
-            files: coverage.xml
+            files: ./coverage.xml
             verbose: true
             fail_ci_if_error: true
 
