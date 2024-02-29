@@ -7,9 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class KanguTest extends TestCase
 {
-    /**
-     * @covers Ozoriotsn\Kangu\Kangu
-     */
+
 
     public function testSimulate()
     {
@@ -23,9 +21,7 @@ class KanguTest extends TestCase
         self::assertTrue($service->simulate([]));
     }
 
-    /**
-     * @covers Ozoriotsn\Kangu\Kangu
-     */
+ 
     public function testTrackback()
     {
 
