@@ -1,0 +1,40 @@
+{
+    "name": "ozoriotsn/kangu-php-sdk",
+    "description": "Kangu SDK for PHP",
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Ozoriotsn\\Kangu\\": "src/"
+        }
+    },
+    "homepage": "https://github.com/ozoriotsn/kangu-php-sdk",
+    "support": {
+        "issues": "https://github.com/ozoriotsn/kangu-php-sdk/issues",
+        "source": "https://github.com/ozoriotsn/kangu-php-sdk"
+    },
+    "keywords": [
+        "kangu php sdk",
+        "kangu sdk",
+        "kangu",
+        "kangu php"
+    ],
+    "authors": [
+        {
+            "name": "Ozoriotsn",
+            "email": "ozorio.silva.neto@gmail.com",
+            "homepage": "https://github.com/ozoriotsn",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~8.1",
+        "guzzlehttp/guzzle": "^7.7",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
