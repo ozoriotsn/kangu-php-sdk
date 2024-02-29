@@ -1,7 +1,8 @@
 composer.phar
 /vendor/
-/.phpunit.cache
+/.phpunit.cache/*
 /.phpunit.result.cache
+/.phpunit.cache/test-results
 /.vscode/*
 /.idea/*
 /testdox.html

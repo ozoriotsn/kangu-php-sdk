@@ -9,7 +9,6 @@ class KanguTest extends TestCase
 {
     /**
      * @covers Ozoriotsn\Kangu\Kangu
-     * @covers Ozoriotsn\Kangu\Simulate
      */
 
     public function testSimulate()
@@ -26,7 +25,6 @@ class KanguTest extends TestCase
 
     /**
      * @covers Ozoriotsn\Kangu\Kangu
-     * @covers Ozoriotsn\Kangu\Trackback
      */
     public function testTrackback()
     {
