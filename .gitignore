@@ -1,0 +1,7 @@
+composer.phar
+/vendor/
+/.phpunit.cache
+/.phpunit.result.cache
+/.vscode/*
+/.idea/*
+/testdox.html
