@@ -32,7 +32,7 @@ composer require ozoriotsn/kangu-php-sdk
     $kangu = new Kangu('API_KEY');
 ```
 
-## Simulate delivery cost
+## Simulate Delivery Cost
 
 ``` php
 
@@ -62,7 +62,7 @@ composer require ozoriotsn/kangu-php-sdk
         "ordernar" => "preco" // ‘preco’ ou ‘prazo’
     ];
 
-    $simulate = $kangu->simulate($data)->toJson();
+    $simulate = $kangu->simulate($data);
 
     echo ($simulate);
 
