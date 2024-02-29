@@ -32,7 +32,7 @@ composer require ozoriotsn/kangu-php-sdk
     $kangu = new Kangu('API_KEY');
 ```
 
-## Simulate Shipping
+## Simulate delivery cost
 
 ``` php
 
@@ -57,7 +57,7 @@ composer require ozoriotsn/kangu-php-sdk
             "E",// Entrega normal
             "X",// Entrega expressa
             "M",// Mini Envios
-            "R" // retirada
+            "R" // Retirada
         ],
         "ordernar" => "preco" // ‘preco’ ou ‘prazo’
     ];
@@ -105,7 +105,7 @@ composer require ozoriotsn/kangu-php-sdk
 ```
 
 
-## Track back
+## Track Back
 
 
 ``` php
