@@ -6,6 +6,7 @@ namespace Ozoriotsn\Kangu;
 use Exception;
 use GuzzleHttp\Client;
 
+
 /**
  * Class Api
  * @package Ozoriotsn\Kangu
@@ -30,14 +31,14 @@ class Api
      *
      * @throws Exception Token não informado
      */
-    public  function http()
+    public function http()
     {
 
-        if (is_null($this->accessToken)) {
-            throw new Exception("Token não informado");
-        }
-
         try {
+
+            if (is_null($this->accessToken)) {
+                throw new Exception("Token não informado");
+            }
 
             $headers = [
                 'token' => $this->accessToken,
@@ -53,19 +54,18 @@ class Api
                 'headers' => $headers
             ];
 
-           return new Client(array_merge(
-                $options,
-                array(
-                    'base_uri' => 'https://portal.kangu.com.br/tms/transporte/',
-                    'headers' => $headers
+            return new Client(
+                array_merge(
+                    $options,
+                    array(
+                        'base_uri' => 'https://portal.kangu.com.br/tms/transporte/',
+                        'headers' => $headers
+                    )
                 )
-            ));
-
-        } catch (\GuzzleHttp\Exception\ClientException $e) {
-            echo $e->getMessage();
+            );
 
         } catch (Exception $e) {
-            echo $e->getMessage();
+            throw new Exception($e->getMessage());
         }
 
     }

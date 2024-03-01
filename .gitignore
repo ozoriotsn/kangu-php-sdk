@@ -1,5 +1,6 @@
 composer.phar
 /vendor/
+/coverage/
 /.phpunit.cache/*
 /.phpunit.result.cache
 /.phpunit.cache/test-results
